@@ -4,10 +4,10 @@ function log(something) {
   console.log(something);
 }
 
-// 🧠 What will this do?
+// 🤔 What will this do?
 // nums.forEach(log);
 
-// 🧠 What would this look like with an arrow function?
+// 🤔 What would this look like with an arrow function?
 // nums.forEach((num) => {
 //   console.log(num);
 // });
@@ -25,12 +25,9 @@ const orders = [
   },
 ];
 
-// 🧠 How could you discount each thing?
-orders.forEach((order) => {
-  order.price = 0.1 * order.price;
-});
+// 🤔 How could you discount each price so that it is 10% off its origina value?
 
-// 🧠 How could we add a checkout-clerk name to each?
+// 🤔 How could we add a checkout-clerk name to each order?
 
 // ====================================================================
 

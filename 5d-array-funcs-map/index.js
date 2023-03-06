@@ -1,11 +1,11 @@
 let boringWords = ["sigh", "droop", "laze"];
 
-// 🧠 What if we want to transform them into CAPITALIZED VERSIONS.
+// 🤔 What if we want to transform them into CAPITALIZED VERSIONS.
 //    !!!!WITH EXCLAMATION MARKS!!!!
 
 function excitify(word) {
-  // 🧠 Can you do this with a string template? Try!
-  return `!!!!${word.toUpperCase()}!!!!`;
+  // 🤔 Can you do this with a string template? Try!
+  return "";
 }
 
 let excitingWords = boringWords.map(excitify);
@@ -39,13 +39,26 @@ const photos = [
   },
 ];
 
-// 🧠 What if we just want an array of the titles?
-let titles = photos.map((photo) => photo.title);
+// 🤔 What if we just want an array of the titles?
+let titles;
 
-// 🧠 What if we wanted NEW objects composed of parts of the originals?
-let photographerLocations = photos.map((photo) => {
-  return {
-    artist: photo.photographer,
-    hasBeenTo: photo.location,
-  };
-});
+// 🤔 What if we wanted NEW objects composed of parts of the originals?
+// Like this:
+// {
+//   artist: Ben Miels,
+//   latLong: {lat: 31, lon: 135},
+// }
+
+// let photographerLocations = photos.map((photo) => {
+//   return {
+//     artist: photo.photographer,
+//     hasBeenTo: photo.location,
+//   };
+// });
+
+// or - and this is an arrow function gotcha:
+
+// let photographerLocations = photos.map((photo) => ({
+//   artist: photo.photographer,
+//   hasBeenTo: photo.location,
+// }));
