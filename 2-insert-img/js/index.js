@@ -1,4 +1,4 @@
-import { picData } from "./data/pic-data.js";
+import { picData } from "../data/pic-data.js";
 import { picsumImg } from "./helpers/picsum-helpers.js";
 
 let img = picsumImg(picData);

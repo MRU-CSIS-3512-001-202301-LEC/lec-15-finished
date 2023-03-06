@@ -16,6 +16,8 @@ result = nums.find(isEven2);
 
 // 🤔 How would you arrowfy it?
 
+result = nums.find((num) => num % 2 === 0);
+
 // -------------------------------------------------------
 
 const hats = [
@@ -34,8 +36,9 @@ const hats = [
 ];
 
 // 🤔 How would you find an "adventurous" hat?
-// let advHat = hats.find(); // what's our callback going to be?
+let advHat = hats.find((hat) => hat.adjective === "adventurous");
 
 // 🤔 What's going to happen here?
 
 let nofindy = hats.find((hat) => hat.type === "bowler");
+console.log(nofindy);
