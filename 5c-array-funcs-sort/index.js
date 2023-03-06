@@ -22,7 +22,7 @@ const adventurers = [
     name: "Jampa",
     class: "Barbarian",
     level: 5,
-    hp: 74,
+    hp: 174,
     ac: 4,
   },
   {
@@ -48,10 +48,19 @@ const adventurers = [
   },
 ];
 
-// 🧠 This was on my coding midterm last year. How would you sort these by level descending?
-let sortedByLevel = adventurers.sort((adv1, adv2) => adv2.level - adv1.level);
+// 🤔 How would you sort these by level ascending?
+let sortedByLevelAsc; // ??
+console.log("sorted by level, asc:", sortedByLevelAsc);
 
-// 🧠 Reverse alphabetical order by name?
-let sortedByNameReverse = adventurers.sort((adv1, adv2) =>
-  adv2.name.localeCompare(adv1.name),
-);
+// 🤔 How would you sort these by level DESCENDING?
+let sortedByLevelDesc; // ??
+console.log("sorted by level, desc:", sortedByLevelDesc);
+
+// 🤔 How would you sort these by hp ascending?
+let sortedByHpAsc; // ??
+console.log("sorted by hp, asc:", sortedByHpAsc);
+
+// 🤔 How would you sort these reverse alphabetical order by name?
+// Look up localeCompare
+let sortedByNameDesc; // ??
+console.log("sorted by name, desc:", sortedByNameDesc);
